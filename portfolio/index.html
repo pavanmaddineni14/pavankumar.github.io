@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pavankumar Maddineni | Senior iOS Engineer</title>
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Lottie -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Pavankumar</a>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="theme-toggle">🌙</button>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header id="home">
+    <div class="container header-container">
+      <div class="intro">
+        <h1>Hello, I'm <span>Pavankumar Maddineni</span></h1>
+        <p><span id="typing"></span></p>
+        <div class="buttons">
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="#contact" class="btn btn-primary">Contact Me</a>
+        </div>
+      </div>
+      <div class="profile-img">
+        <img src="images/profile.jpg" alt="Pavankumar Maddineni">
+        <div id="lottie-header" class="lottie-animation"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="fade-in">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I am a Senior iOS Software Engineer with 9+ years of experience building scalable, high-traffic mobile applications used by millions. 
+        I specialize in Swift, SwiftUI, and modern iOS architectures, delivering robust, maintainable, and high-performance apps.
+      </p>
+      <div class="skills">
+        <h3>Technical Skills</h3>
+        <ul>
+          <li>Swift, Objective-C, RxSwift, JavaScript, TypeScript</li>
+          <li>SwiftUI, UIKit, Combine, CoreData, WidgetKit</li>
+          <li>Clean Architecture, MVVM, VIPER, Modular Design</li>
+          <li>REST APIs, GraphQL, Alamofire, Codable</li>
+          <li>Firebase, AWS, Azure, Stripe, Jumio</li>
+          <li>XCTest, TDD, TestFlight</li>
+          <li>Git, GitLab CI/CD, Jenkins, Fastlane</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section with GitHub Realtime Data -->
+  <section id="projects" class="fade-in">
+    <div class="container">
+      <h2>Projects</h2>
+      <div id="projects-grid" class="projects-grid">
+        <!-- Projects will load dynamically from GitHub API -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="fade-in">
+    <div class="container">
+      <h2>Professional Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Senior iOS Developer | 7-Eleven</h3>
+          <span>June 2023 - Present | Irving, TX</span>
+          <p>Developed consumer-facing features, Live Activities, in-app support, and analytics monitoring, achieving 20% crash reduction.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Senior iOS Developer | GP Infotech</h3>
+          <span>Jan 2019 - Dec 2021 | Hyderabad, India</span>
+          <p>Led iOS team for Mancosa and gFleet+ projects, integrating Zoom SDK, Firebase Analytics, and real-time telemetry dashboards.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>iOS Developer | Tecordeon Software</h3>
+          <span>May 2017 - Jan 2019 | Hyderabad, India</span>
+          <p>Built BLE-based hardware apps, reusable frameworks, and optimized CoreBluetooth layers with high reliability.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="fade-in">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Irving, TX | 3802327599 | <a href="mailto:pavanmaddineni14@gmail.com">pavanmaddineni14@gmail.com</a></p>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Pavankumar Maddineni | Built with ❤️ & SwiftUI Inspiration</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
