@@ -113,7 +113,7 @@ header {
 /* ===== SECTIONS ===== */
 section {
   width:100%;
-  padding:6rem 2rem;
+  padding:3rem 6rem;
   opacity:0;
   transform: translateY(60px);
   transition:0.8s;
