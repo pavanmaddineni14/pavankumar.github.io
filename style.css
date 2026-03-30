@@ -104,7 +104,10 @@ header {
 @keyframes float { 50% { transform: translateY(-20px); } }
 
 .intro h1 { font-size:2.5rem; }
-.intro span { background: linear-gradient(90deg, var(--accent), #ffd93d); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+.intro span {
+     background: linear-gradient(90deg, var(--accent), #ffd93d);
+     background-clip:text;
+      -webkit-text-fill-color:transparent; }
 .intro p { font-size:1.2rem; margin-top:1rem; }
 
 /* ===== SECTIONS ===== */
