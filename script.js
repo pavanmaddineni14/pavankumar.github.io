@@ -15,16 +15,55 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Typing effect
 const typing = document.getElementById('typing');
-const words = ["iOS Engineer", "Swift Expert", "Mobile Architect"];
+const words = [
+  "Senior iOS Engineer",
+  "Building Scalable iOS Apps",
+  "Swift & SwiftUI Specialist",
+  "Clean Architecture in Practice",
+  "MVVM & Modular Design",
+  "High-Performance Mobile Apps",
+  "Real-Time Features & APIs",
+  "End-to-End Feature Ownership",
+  "Production-Ready iOS Apps",
+  "App Stability & Crash Reduction",
+  "CI/CD & Release Automation",
+  "Testable & Maintainable Code",
+  "User-Centric Mobile Experiences",
+  "Secure Payments & Integrations",
+  "Maps, Navigation & Live Tracking",
+  "App Store Releases at Scale",
+  "Optimized Networking & Caching",
+  "Analytics-Driven Improvements"
+];
 let i = 0, j = 0, current = '', isDeleting = false;
 
-function type(){
+function type() {
   current = words[i];
-  typing.textContent = isDeleting ? current.substring(0,j--) : current.substring(0,j++);
-  if(!isDeleting && j===current.length){ isDeleting=true; setTimeout(type,1000); return; }
-  if(isDeleting && j===0){ isDeleting=false; i=(i+1)%words.length; }
-  setTimeout(type,100);
+
+  if (isDeleting) {
+    j--;
+    typing.textContent = current.substring(0, j);
+  } else {
+    j++;
+    typing.textContent = current.substring(0, j);
+  }
+
+  // ✅ When word fully typed
+  if (!isDeleting && j === current.length) {
+    isDeleting = true;
+    setTimeout(type, 2000); // ⏸ 2 sec pause
+    return;
+  }
+
+  // ✅ When word fully deleted
+  if (isDeleting && j === 0) {
+    isDeleting = false;
+    i = (i + 1) % words.length;
+  }
+
+  setTimeout(type, isDeleting ? 50 : 100);
 }
+
 type();
 
 // Fade in sections
@@ -53,3 +92,6 @@ async function loadRepos(){
   } catch { grid.innerHTML = "Failed to load projects"; }
 }
 loadRepos();
+
+
+// Skills

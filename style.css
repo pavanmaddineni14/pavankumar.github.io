@@ -184,3 +184,217 @@ section.show { opacity:1; transform:translateY(0); }
   .intro h1 { font-size:2rem; }
   .profile-img img { width:150px; }
 }
+
+/* ===== SKILLS (TINTED APPLE GLASS) ===== */
+.liquidglass span {
+  display: inline-block;
+  margin: 6px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #0d0d0d;
+
+  /* Colored glass effect */
+  background: rgba(37, 117, 252, 0.15); /* soft blue tint */
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(37, 117, 252, 0.3); /* subtle tinted border */
+  box-shadow:
+    0 4px 20px rgba(0,0,0,0.08),
+    inset 0 1px 1px rgba(255,255,255,0.05);
+
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Light reflection */
+.liquidglass span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.3),
+    transparent
+  );
+  transform: skewX(-25deg);
+}
+
+/* Hover animation */
+.liquidglass span:hover {
+  transform: translateY(-4px) scale(1.05);
+  background: rgba(37, 117, 252, 0.25); /* slightly stronger tint */
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.15),
+    inset 0 1px 2px rgba(255,255,255,0.1);
+}
+
+.liquidglass span:hover::before {
+  animation: shine 0.8s ease;
+}
+
+@keyframes shine {
+  100% { left: 125%; }
+}
+
+
+/* ===== GLASSY BLUR SKILLS ===== */
+.blurrystyle span {
+  display: inline-block;
+  margin: 6px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #fff;
+
+  /* Transparent glass background */
+  background: rgba(255, 255, 255, 0.1);  /* low-opacity white */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  /* Soft border */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  /* Subtle shadows for depth */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08), inset 0 1px 2px rgba(255,255,255,0.05);
+
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Light reflection */
+.blurrystyle span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.3),
+    transparent
+  );
+  transform: skewX(-25deg);
+}
+
+/* Hover animation */
+.blurrystyle span:hover {
+  transform: translateY(-4px) scale(1.05);
+  background: rgba(255, 255, 255, 0.18); /* slightly stronger blur on hover */
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12), inset 0 1px 2px rgba(255,255,255,0.08);
+}
+
+.blurrystyle span:hover::before {
+  animation: shine 0.8s ease;
+}
+
+@keyframes shine {
+  100% { left: 125%; }
+}
+
+/* ===== GLASSY GRADIENT SKILLS ===== */
+.glassygradient span {
+  display: inline-block;
+  margin: 6px;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #fff;
+
+  /* Gradient background */
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+
+  /* Frosted glass effect */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-clip: padding-box;
+  border: 1px solid rgba(255,255,255,0.15);
+
+  /* Subtle shadows for depth */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08), inset 0 1px 2px rgba(255,255,255,0.05);
+
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Shine animation on hover */
+.glassygradient span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.25),
+    transparent
+  );
+  transform: skewX(-25deg);
+}
+
+.glassygradient span:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12), inset 0 2px 4px rgba(255,255,255,0.08);
+}
+
+.glassygradient span:hover::before {
+  animation: shine 0.8s ease forwards;
+}
+
+@keyframes shine {
+  100% { left: 125%; }
+}
+
+/* 
+.projects span {
+  display:inline-block; margin:5px;
+  padding:6px 14px;
+  border-radius:20px;
+  background: linear-gradient(45deg,var(--primary),var(--secondary));
+  color:white; transition:0.3s;
+}
+.projects span:hover { transform: scale(1.1); } */
+
+.projects a {
+  display: inline-block;
+  margin: 5px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.projects a:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;      /* Adds space inside footer */
+  margin-bottom: 2rem;     /* Space below the footer */
+  background: rgba(255, 255, 255, 0.6); /* optional glass style */
+  backdrop-filter: blur(15px);          /* glass effect */
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  color: #333;
+  font-size: 0.9rem;
+}

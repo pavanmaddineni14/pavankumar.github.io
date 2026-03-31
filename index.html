@@ -60,16 +60,80 @@
         testing and performance optimization. I collaborate effectively with cross-functional teams in Agile
         environments and continuously strive to improve code quality, scalability, and user experience. I am also
         expanding my expertise in cross-platform technologies such as Kotlin Multiplatform and React Native.</p>
+    </div>
+  </section>
 
-      <div class="skills">
-        <span>iOS Development</span>
-        <span>Swift</span>
-        <span>SwiftUI</span>
-        <span>UIKit</span>
-        <span>MVVM</span>
-        <span>Clean Architecture</span>
-        <span>React Native</span>
-      </div>
+    <!-- About -->
+  <section id="about">
+    <div class="about-card glass">
+      <h2>My Skills</h2>
+
+<div id="skills-container"></div>
+
+<script>
+  const skillsData = {
+    "iOS & App Architecture": [
+      "iOS Development", "Swift", "SwiftUI", "UIKit",
+      "MVVM", "Clean Architecture", "VIPER",
+      "Coordinator Pattern", "Modular Architecture",
+      "App Store Release Management", "Widgets & Live Activities",
+      "Async/Await Concurrency", "Combine Framework",
+      "REST & GraphQL", "API Integration"
+    ],
+    "Testing & QA": [
+      "XCTest", "XCUITest", "Test Automation", "TDD",
+      "UI Testing", "Unit Testing", "TestFlight Management"
+    ],
+    "CI/CD & Tools": [
+      "Git & GitLab CI/CD", "Jenkins", "Fastlane",
+      "Firebase App Distribution", "Figma to Code"
+    ],
+    "Analytics & Monitoring": [
+      "Firebase Analytics", "Mixpanel", "New Relic",
+      "Crashlytics", "Performance Optimization"
+    ],
+    "Cloud & Notifications": [
+      "Firebase Realtime DB", "AWS CloudWatch",
+      "Azure Notification Hubs", "Push Notifications (APNs)"
+    ],
+    "Payments & Security": [
+      "Stripe Integration", "Jumio SDK",
+      "MobileProtect", "DataTheorem Security",
+      "Secure Data Storage"
+    ],
+    "Cross-Platform & Web": [
+      "React Native", "Kotlin Multiplatform (Basic)",
+      "Node.js", "HTML & CSS", "TypeScript & JavaScript"
+    ],
+    "Soft & Agile": [
+      "Agile & Scrum", "SDLC", "Accessibility (iOS)",
+      "Localization", "Team Mentorship"
+    ]
+  };
+
+  const container = document.getElementById("skills-container");
+
+  for (const [sectionName, skills] of Object.entries(skillsData)) {
+    const sectionDiv = document.createElement("div");
+    sectionDiv.className = "skills-block";
+
+    const title = document.createElement("h4");
+    title.textContent = sectionName;
+    sectionDiv.appendChild(title);
+
+    const glass = document.createElement("div");
+    glass.className = "liquidglass";
+
+    skills.forEach(skill => {
+      const span = document.createElement("span");
+      span.textContent = skill;
+      glass.appendChild(span);
+    });
+
+    sectionDiv.appendChild(glass);
+    container.appendChild(sectionDiv);
+  }
+</script>
     </div>
   </section>
 
@@ -85,43 +149,63 @@
         also been involved in deploying apps to production, managing TestFlight and App Store releases, and making sure
         apps are stable and reliable for large-scale users.</p>
 
-      <div class="skills">
-        <span>7Eleven</span>
-        <span>7Now</span>
-        <span>Skipcart</span>
-        <span>Mancosa</span>
-        <span>gFleet+</span>
-        <span>GTelemetry</span>
-      </div>
+     <div class="projects">
+      <a href="https://apps.apple.com/us/app/skipcart-delivery-driver/id1514854357" target="_blank">Skipcart</a>
+  <a href="https://apps.apple.com/us/app/7-eleven-rewards-shopping/id589653414" target="_blank">7Eleven</a>
+  <a href="https://apps.apple.com/us/app/7now-food-drinks-delivery/id1316244211" target="_blank">7Now</a>
+  <a href="https://apps.apple.com/us/app/speedway-rewards-shopping/id568047979" target="_blank">Speedway</a>
+  
+  <a href="https://apps.apple.com/us/app/mancosa-student-comms/id1535038679" target="_blank">Mancosa Student Comms</a>
+  <a href=" https://apps.apple.com/us/app/mancosa-quality-conference/id1585104889" target="_blank">MANCOSA Quality Conference</a>
+  
+  <a href="https://apps.apple.com/us/app/gfleet/id1453989211" target="_blank">gFleet+</a>
+  <a href="https://www.gussmann.my" target="_blank">GTelemetry</a>
+</div>
     </div>
   </section>
 
   <!-- Experience -->
   <section id="experience">
-     <div class="about-card glass">
-    <h2>Experience</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <h3>7-Eleven</h3>
-        <span>2023 - Present</span>
-        <p>Building scalable retail and logistics apps using SwiftUI, modular architecture, and real-time services.</p>
+    <div class="about-card glass">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>7-Eleven</h3>
+          <span>2023 - Present</span>
+          <p>Worked as a Senior iOS Engineer contributing to multiple large-scale retail and logistics applications
+            including 7-Eleven, 7Now, Speedway, and the Skipcart Driver app. Focused on building scalable mobile
+            features using Swift, SwiftUI, and modular architectures. Implemented real-time services, payment
+            integrations, location services, and customer support modules while improving app stability, monitoring, and
+            CI/CD delivery for high-traffic consumer applications.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>GP Infotech</h3>
+          <span>2019 - 2021</span>
+          <p>Led the iOS development team at GP Infotech, delivering multiple mobile applications for international
+            clients across education, conferencing, and fleet management domains. Responsible for architecture
+            decisions, feature planning, and mentoring developers while building scalable iOS applications using Swift,
+            SwiftUI, and UIKit. Oversaw integrations including real-time chat, video conferencing, analytics, and
+            mapping platforms while ensuring high code quality, stability, and successful App Store releases.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Tecordeon</h3>
+          <span>2017 - 2019</span>
+          <p>Worked as an iOS Developer building IoT-enabled mobile applications that communicated with hardware
+            devices through Bluetooth Low Energy (BLE). Developed device communication layers using CoreBluetooth and
+            built custom frameworks to manage device connectivity, command execution, and state handling. Focused on
+            improving connection reliability, implementing asynchronous device communication, and building custom UI
+            components for hardware control interfaces.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Brucode</h3>
+          <span>2016 - 2017</span>
+          <p>Worked as an iOS Developer contributing to the development of multiple consumer iOS applications using
+            Swift and UIKit. Implemented core mobile features including social authentication, third-party SDK
+            integrations, and custom UI components. Developed reusable table and collection view components, integrated
+            image upload workflows, and implemented chart-based data visualization features to support user engagement
+            and analytics.</p>
+        </div>
       </div>
-      <div class="timeline-item">
-        <h3>GP Infotech</h3>
-        <span>2019 - 2021</span>
-        <p>Led iOS development delivering apps across education, conferencing, and fleet platforms.</p>
-      </div>
-      <div class="timeline-item">
-        <h3>Tecordeon</h3>
-        <span>2017 - 2019</span>
-        <p>Developed BLE-based IoT apps with strong device communication reliability.</p>
-      </div>
-      <div class="timeline-item">
-        <h3>Brucode</h3>
-        <span>2016 - 2017</span>
-        <p>Built iOS apps with social login, analytics, and reusable UI components.</p>
-      </div>
-    </div>
     </div>
   </section>
 
