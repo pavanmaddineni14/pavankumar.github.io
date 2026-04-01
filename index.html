@@ -16,6 +16,8 @@
 
   <!-- Lottie -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
+<!-- Email -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -213,12 +215,12 @@
   <section id="contact">
     <div class="contact-card glass">
       <h2>Contact Me</h2>
-      <form>
-        <input type="text" placeholder="Name" required>
-        <input type="email" placeholder="Email" required>
-        <textarea placeholder="Message" rows="5" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+      <form id="contact-form">
+  <input type="text" name="name" placeholder="Name" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <textarea name="message" placeholder="Message" rows="5" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
     </div>
   </section>
 

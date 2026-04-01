@@ -94,4 +94,29 @@ async function loadRepos(){
 loadRepos();
 
 
-// Skills
+// Email
+// Initialize EmailJS
+(function () {
+  emailjs.init("YOUR_PUBLIC_KEY"); // replace this
+})();
+
+// Handle form submit
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  emailjs.sendForm(
+    "YOUR_SERVICE_ID",   // replace
+    "YOUR_TEMPLATE_ID",  // replace
+    this
+  )
+  .then(() => {
+    alert("✅ Message sent successfully!");
+    form.reset();
+  })
+  .catch((error) => {
+    console.error("FAILED...", error);
+    alert("❌ Failed to send message");
+  });
+});
