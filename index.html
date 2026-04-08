@@ -16,7 +16,7 @@
 
   <!-- Lottie -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
-<!-- Email -->
+  <!-- Email -->
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 </head>
 
@@ -44,9 +44,23 @@
       <div class="profile-img">
         <img src="images/profile.jpg" alt="Pavankumar Maddineni">
       </div>
+
       <div class="intro">
         <h1>Hello, I'm <span>Pavankumar Maddineni</span></h1>
         <p><span id="typing"></span></p>
+
+        <!-- Buttons Section -->
+        <div class="hero-buttons">
+          <!-- LinkedIn Profile -->
+          <a href="https://www.linkedin.com/in/pavan-maddineni-860a3b26b/" target="_blank" class="btn linkedin-btn">
+            View LinkedIn
+          </a>
+
+          <!-- Resume Download -->
+          <a href="images/resume.pdf" target="_blank" download class="btn resume-btn">
+            Download Resume
+          </a>
+        </div>
       </div>
     </div>
   </header>
@@ -55,7 +69,7 @@
   <section id="about">
     <div class="about-card glass">
       <h2>About Me</h2>
-      <p class="about-highlight">I am a Senior iOS Software Engineer with 9+ years of experience building scalable,
+      <p>I am a Senior iOS Software Engineer with 9+ years of experience building scalable,
         high-performance mobile applications using Swift, SwiftUI, and UIKit. I have worked on high-traffic,
         consumer-facing apps where stability, performance, and user experience are critical. I take ownership of
         features end-to-end, with a strong focus on delivering reliable, crash-free applications through proactive
@@ -65,77 +79,77 @@
     </div>
   </section>
 
-    <!-- About -->
+  <!-- About -->
   <section id="about">
     <div class="about-card glass">
       <h2>My Skills</h2>
 
-<div id="skills-container"></div>
+      <div id="skills-container"></div>
 
-<script>
-  const skillsData = {
-    "iOS & App Architecture": [
-      "iOS Development", "Swift", "SwiftUI", "UIKit",
-      "MVVM", "Clean Architecture", "VIPER",
-      "Coordinator Pattern", "Modular Architecture",
-      "App Store Release Management", "Widgets & Live Activities",
-      "Async/Await Concurrency", "Combine Framework",
-      "REST & GraphQL", "API Integration"
-    ],
-    "Testing & QA": [
-      "XCTest", "XCUITest", "Test Automation", "TDD",
-      "UI Testing", "Unit Testing", "TestFlight Management"
-    ],
-    "CI/CD & Tools": [
-      "Git & GitLab CI/CD", "Jenkins", "Fastlane",
-      "Firebase App Distribution", "Figma to Code"
-    ],
-    "Analytics & Monitoring": [
-      "Firebase Analytics", "Mixpanel", "New Relic",
-      "Crashlytics", "Performance Optimization"
-    ],
-    "Cloud & Notifications": [
-      "Firebase Realtime DB", "AWS CloudWatch",
-      "Azure Notification Hubs", "Push Notifications (APNs)"
-    ],
-    "Payments & Security": [
-      "Stripe Integration", "Jumio SDK",
-      "MobileProtect", "DataTheorem Security",
-      "Secure Data Storage"
-    ],
-    "Cross-Platform & Web": [
-      "React Native", "Kotlin Multiplatform (Basic)",
-      "Node.js", "HTML & CSS", "TypeScript & JavaScript"
-    ],
-    "Soft & Agile": [
-      "Agile & Scrum", "SDLC", "Accessibility (iOS)",
-      "Localization", "Team Mentorship"
-    ]
-  };
+      <script>
+        const skillsData = {
+          "iOS & App Architecture": [
+            "iOS Development", "Swift", "SwiftUI", "UIKit",
+            "MVVM", "Clean Architecture", "VIPER",
+            "Coordinator Pattern", "Modular Architecture",
+            "App Store Release Management", "Widgets & Live Activities",
+            "Async/Await Concurrency", "Combine Framework",
+            "REST & GraphQL", "API Integration"
+          ],
+          "Testing & QA": [
+            "XCTest", "XCUITest", "Test Automation", "TDD",
+            "UI Testing", "Unit Testing", "TestFlight Management"
+          ],
+          "CI/CD & Tools": [
+            "Git & GitLab CI/CD", "Jenkins", "Fastlane",
+            "Firebase App Distribution", "Figma to Code"
+          ],
+          "Analytics & Monitoring": [
+            "Firebase Analytics", "Mixpanel", "New Relic",
+            "Crashlytics", "Performance Optimization"
+          ],
+          "Cloud & Notifications": [
+            "Firebase Realtime DB", "AWS CloudWatch",
+            "Azure Notification Hubs", "Push Notifications (APNs)"
+          ],
+          "Payments & Security": [
+            "Stripe Integration", "Jumio SDK",
+            "MobileProtect", "DataTheorem Security",
+            "Secure Data Storage"
+          ],
+          "Cross-Platform & Web": [
+            "React Native", "Kotlin Multiplatform (Basic)",
+            "Node.js", "HTML & CSS", "TypeScript & JavaScript"
+          ],
+          "Soft & Agile": [
+            "Agile & Scrum", "SDLC", "Accessibility (iOS)",
+            "Localization", "Team Mentorship"
+          ]
+        };
 
-  const container = document.getElementById("skills-container");
+        const container = document.getElementById("skills-container");
 
-  for (const [sectionName, skills] of Object.entries(skillsData)) {
-    const sectionDiv = document.createElement("div");
-    sectionDiv.className = "skills-block";
+        for (const [sectionName, skills] of Object.entries(skillsData)) {
+          const sectionDiv = document.createElement("div");
+          sectionDiv.className = "skills-block";
 
-    const title = document.createElement("h4");
-    title.textContent = sectionName;
-    sectionDiv.appendChild(title);
+          const title = document.createElement("h4");
+          title.textContent = sectionName;
+          sectionDiv.appendChild(title);
 
-    const glass = document.createElement("div");
-    glass.className = "liquidglass";
+          const glass = document.createElement("div");
+          glass.className = "liquidglass";
 
-    skills.forEach(skill => {
-      const span = document.createElement("span");
-      span.textContent = skill;
-      glass.appendChild(span);
-    });
+          skills.forEach(skill => {
+            const span = document.createElement("span");
+            span.textContent = skill;
+            glass.appendChild(span);
+          });
 
-    sectionDiv.appendChild(glass);
-    container.appendChild(sectionDiv);
-  }
-</script>
+          sectionDiv.appendChild(glass);
+          container.appendChild(sectionDiv);
+        }
+      </script>
     </div>
   </section>
 
@@ -143,26 +157,29 @@
   <section id="projects">
     <div class="about-card glass">
       <h2>Projects</h2>
-      <p class="about-highlight">I’ve worked as a Senior iOS Engineer for 9+ years, building mobile apps across retail,
+      <p>I’ve worked as a Senior iOS Engineer for 9+ years, building mobile apps across retail,
         logistics, education,
         IoT, and fleet management domains. I mainly work with Swift, SwiftUI, and modern architectures like MVVM and
         Clean Architecture to build scalable and high-performance apps. I’ve handled everything end-to-end—from API
         integrations and real-time features like maps and payments to performance optimization, testing, and CI/CD. I’ve
         also been involved in deploying apps to production, managing TestFlight and App Store releases, and making sure
         apps are stable and reliable for large-scale users.</p>
+        <br>
 
-     <div class="projects">
-      <a href="https://apps.apple.com/us/app/skipcart-delivery-driver/id1514854357" target="_blank">Skipcart</a>
-  <a href="https://apps.apple.com/us/app/7-eleven-rewards-shopping/id589653414" target="_blank">7Eleven</a>
-  <a href="https://apps.apple.com/us/app/7now-food-drinks-delivery/id1316244211" target="_blank">7Now</a>
-  <a href="https://apps.apple.com/us/app/speedway-rewards-shopping/id568047979" target="_blank">Speedway</a>
-  
-  <a href="https://apps.apple.com/us/app/mancosa-student-comms/id1535038679" target="_blank">Mancosa Student Comms</a>
-  <a href=" https://apps.apple.com/us/app/mancosa-quality-conference/id1585104889" target="_blank">MANCOSA Quality Conference</a>
-  
-  <a href="https://apps.apple.com/us/app/gfleet/id1453989211" target="_blank">gFleet+</a>
-  <a href="https://www.gussmann.my" target="_blank">GTelemetry</a>
-</div>
+      <div class="projects">
+        <a href="https://apps.apple.com/us/app/skipcart-delivery-driver/id1514854357" target="_blank">Skipcart</a>
+        <a href="https://apps.apple.com/us/app/7-eleven-rewards-shopping/id589653414" target="_blank">7Eleven</a>
+        <a href="https://apps.apple.com/us/app/7now-food-drinks-delivery/id1316244211" target="_blank">7Now</a>
+        <a href="https://apps.apple.com/us/app/speedway-rewards-shopping/id568047979" target="_blank">Speedway</a>
+
+        <a href="https://apps.apple.com/us/app/mancosa-student-comms/id1535038679" target="_blank">Mancosa Student
+          Comms</a>
+        <a href=" https://apps.apple.com/us/app/mancosa-quality-conference/id1585104889" target="_blank">MANCOSA Quality
+          Conference</a>
+
+        <a href="https://apps.apple.com/us/app/gfleet/id1453989211" target="_blank">gFleet+</a>
+        <a href="https://www.gussmann.my" target="_blank">GTelemetry</a>
+      </div>
     </div>
   </section>
 
@@ -173,7 +190,7 @@
       <div class="timeline">
         <div class="timeline-item">
           <h3>7-Eleven</h3>
-          <span>2023 - Present</span>
+          <span>June 2023 - Present</span>
           <p>Worked as a Senior iOS Engineer contributing to multiple large-scale retail and logistics applications
             including 7-Eleven, 7Now, Speedway, and the Skipcart Driver app. Focused on building scalable mobile
             features using Swift, SwiftUI, and modular architectures. Implemented real-time services, payment
@@ -182,7 +199,7 @@
         </div>
         <div class="timeline-item">
           <h3>GP Infotech</h3>
-          <span>2019 - 2021</span>
+          <span>Jan 2019 - Dec 2021</span>
           <p>Led the iOS development team at GP Infotech, delivering multiple mobile applications for international
             clients across education, conferencing, and fleet management domains. Responsible for architecture
             decisions, feature planning, and mentoring developers while building scalable iOS applications using Swift,
@@ -191,7 +208,7 @@
         </div>
         <div class="timeline-item">
           <h3>Tecordeon</h3>
-          <span>2017 - 2019</span>
+          <span>May 2017 - Jan 2019</span>
           <p>Worked as an iOS Developer building IoT-enabled mobile applications that communicated with hardware
             devices through Bluetooth Low Energy (BLE). Developed device communication layers using CoreBluetooth and
             built custom frameworks to manage device connectivity, command execution, and state handling. Focused on
@@ -200,7 +217,7 @@
         </div>
         <div class="timeline-item">
           <h3>Brucode</h3>
-          <span>2016 - 2017</span>
+          <span>Mar 2016 - May 2017</span>
           <p>Worked as an iOS Developer contributing to the development of multiple consumer iOS applications using
             Swift and UIKit. Implemented core mobile features including social authentication, third-party SDK
             integrations, and custom UI components. Developed reusable table and collection view components, integrated
@@ -216,11 +233,11 @@
     <div class="contact-card glass">
       <h2>Contact Me</h2>
       <form id="contact-form">
-  <input type="text" name="name" placeholder="Name" required>
-  <input type="email" name="email" placeholder="Email" required>
-  <textarea name="message" placeholder="Message" rows="5" required></textarea>
-  <button type="submit">Send Message</button>
-</form>
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
     </div>
   </section>
 
