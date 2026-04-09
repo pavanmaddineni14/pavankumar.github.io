@@ -15,25 +15,27 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Typing effect
 const typing = document.getElementById('typing');
-const words = [
-  "Senior iOS Engineer",
-  "Building Scalable iOS Apps",
-  "Swift & SwiftUI Specialist",
-  "Clean Architecture in Practice",
-  "MVVM & Modular Design",
-  "High-Performance Mobile Apps",
-  "Real-Time Features & APIs",
+const wordsA = [
+  "Senior iOS Engineer with 9+ Years Experience",
+  "Building Apps Used by Millions of Users",
   "End-to-End Feature Ownership",
-  "Production-Ready iOS Apps",
-  "App Stability & Crash Reduction",
-  "CI/CD & Release Automation",
-  "Testable & Maintainable Code",
-  "User-Centric Mobile Experiences",
-  "Secure Payments & Integrations",
-  "Maps, Navigation & Live Tracking",
-  "App Store Releases at Scale",
-  "Optimized Networking & Caching",
-  "Analytics-Driven Improvements"
+  "Driving 99.5% Crash-Free App Stability",
+  "Scaling High-Traffic Mobile Applications",
+  "Delivering Production-Ready Features Fast",
+  "Improving Performance & User Experience",
+  "Leading Features from Idea to App Store",
+  "Analytics-Driven Product Improvements",
+  "Cross-Functional Agile Team Collaboration",
+  "Reducing Crashes & Improving Reliability",
+  "Shipping High-Quality Apps at Scale",
+  "Owning Features Across Multiple Production Apps",
+  "Improving App Ratings & User Retention",
+  "Driving Architecture Decisions for Growth",
+  "Enhancing App Stability Through Optimization",
+  "Accelerating Releases with CI/CD Pipelines",
+  "Building Reliable & Maintainable Codebases",
+  "Reducing Latency & Improving Load Times",
+  "Leading High-Impact Features in Production"
 ];
 let i = 0, j = 0, current = '', isDeleting = false;
 
