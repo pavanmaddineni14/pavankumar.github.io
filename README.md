@@ -9,7 +9,7 @@
 
 ## About Me
 
-I am a **Senior iOS Software Engineer** with **9+ years** of experience building scalable, high-traffic mobile applications used by millions. I specialize in **Swift**, **SwiftUI**, and modern iOS architectures like **MVVM** and **Clean Architecture**, delivering high-performance, maintainable, and robust apps.
+I am a **Senior iOS Software Engineer** with **10+ years** of experience building scalable, high-traffic mobile applications used by millions. I specialize in **Swift**, **SwiftUI**, and modern iOS architectures like **MVVM** and **Clean Architecture**, delivering high-performance, maintainable, and robust apps.
 
 - 📍 Location: Irving, TX  
 - 📧 Email: [pavanmaddineni14@gmail.com](mailto:pavanmaddineni14@gmail.com)  

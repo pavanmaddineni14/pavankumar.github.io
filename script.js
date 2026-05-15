@@ -16,7 +16,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Typing effect
 const typing = document.getElementById('typing');
 const words = [
-  "Senior iOS Engineer with 9+ Years Experience",
+  "Senior iOS Engineer with 10+ Years Experience",
   "Building Apps Used by Millions of Users",
   "End-to-End Feature Ownership",
   "Driving 99.5% Crash-Free App Stability",
